@@ -67,7 +67,7 @@ namespace csci321_assignment01
 
         private void dynamicBtn_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void dynamicBtn_Hover(object sender, EventArgs e)
@@ -87,6 +87,38 @@ namespace csci321_assignment01
             MessageBox.Show(staticTxtBox.Text, "Text Changed");
         }
 
+        private void staticBtn2_Click(object sender, EventArgs e)
+        {
+            if (dynamicTxtBox1 == null && dynamicTxtBox2 == null)
+            {
+                dynamicTxtBox1 = new TextBox();
+                dynamicTxtBox1.Font = new System.Drawing.Font("Liberation Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                dynamicTxtBox1.Location = new System.Drawing.Point(324, 300);
+                dynamicTxtBox1.Name = "Dynamic Text Box 1";
+                dynamicTxtBox1.Size = new System.Drawing.Size(288, 26);
+                dynamicTxtBox1.TabIndex = 1;
+                dynamicTxtBox1.TextChanged += new System.EventHandler(this.dynamicTxtBox_TxtChange);
+                Controls.Add(dynamicTxtBox1);
+                Controls.SetChildIndex(dynamicTxtBox1, 0);
+                dynamicTxtBox2 = new TextBox();
+                dynamicTxtBox2.Font = new System.Drawing.Font("Liberation Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                dynamicTxtBox2.Location = new System.Drawing.Point(324, 340);
+                dynamicTxtBox2.Name = "Dynamic Text Box 2";
+                dynamicTxtBox2.Size = new System.Drawing.Size(288, 26);
+                dynamicTxtBox2.TabIndex = 1;
+                dynamicTxtBox2.TextChanged += new System.EventHandler(this.dynamicTxtBox_TxtChange);
+                Controls.Add(dynamicTxtBox2);
+                Controls.SetChildIndex(dynamicTxtBox2, 0);
+            }
+        }
+
+        private void dynamicTxtBox_TxtChange(object sender, EventArgs e)
+        {
+            Control tmp = (Control)sender;
+            Console.WriteLine(tmp.Name);
+        }
+
         private Button dynamicBtn;
+        private TextBox dynamicTxtBox1, dynamicTxtBox2;
     }
 }

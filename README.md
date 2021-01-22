@@ -13,8 +13,8 @@ CSCS321 (Windows Programming) - Assignment 01
 - [x] Task 3: Static Textbox
     - [x] On Text Change => Send text to a Message Box
     
-- [ ] Task 4: Static Button 2
-    - [ ] On Button Push => Create 2 dynamic textboxes (See task 5)
+- [x] Task 4: Static Button 2
+    - [x] On Button Push => Create 2 dynamic textboxes (See task 5)
     
 - [ ] Task 5: Dynamic textbox * 2 (created by Static Button 2)
     - [ ] On Text Change => Send text & textbox identifier to a Message Box (report which textbox changed and the text)

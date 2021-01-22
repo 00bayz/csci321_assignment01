@@ -32,6 +32,7 @@ namespace csci321_assignment01
             this.DynamicBox = new System.Windows.Forms.GroupBox();
             this.staticBtn1 = new System.Windows.Forms.Button();
             this.StaticBox = new System.Windows.Forms.GroupBox();
+            this.staticBtn2 = new System.Windows.Forms.Button();
             this.staticTxtBox = new System.Windows.Forms.TextBox();
             this.StaticBox.SuspendLayout();
             this.SuspendLayout();
@@ -64,6 +65,7 @@ namespace csci321_assignment01
             // 
             // StaticBox
             // 
+            this.StaticBox.Controls.Add(this.staticBtn2);
             this.StaticBox.Controls.Add(this.staticTxtBox);
             this.StaticBox.Controls.Add(this.staticBtn1);
             this.StaticBox.Font = new System.Drawing.Font("Liberation Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -74,6 +76,20 @@ namespace csci321_assignment01
             this.StaticBox.TabIndex = 0;
             this.StaticBox.TabStop = false;
             this.StaticBox.Text = "Static Elements";
+            // 
+            // staticBtn2
+            // 
+            this.staticBtn2.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.staticBtn2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.staticBtn2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.staticBtn2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.staticBtn2.Location = new System.Drawing.Point(6, 308);
+            this.staticBtn2.Name = "staticBtn2";
+            this.staticBtn2.Size = new System.Drawing.Size(288, 77);
+            this.staticBtn2.TabIndex = 2;
+            this.staticBtn2.Text = "Static Button 2";
+            this.staticBtn2.UseVisualStyleBackColor = false;
+            this.staticBtn2.Click += new System.EventHandler(this.staticBtn2_Click);
             // 
             // staticTxtBox
             // 
@@ -106,6 +122,7 @@ namespace csci321_assignment01
         private System.Windows.Forms.Button staticBtn1;
         private System.Windows.Forms.GroupBox StaticBox;
         private System.Windows.Forms.TextBox staticTxtBox;
+        private System.Windows.Forms.Button staticBtn2;
     }
 }
 
