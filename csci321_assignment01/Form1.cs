@@ -114,8 +114,16 @@ namespace csci321_assignment01
 
         private void dynamicTxtBox_TxtChange(object sender, EventArgs e)
         {
-            Control tmp = (Control)sender;
-            Console.WriteLine(tmp.Name);
+            try
+            {
+                Control tmp = (Control)sender;
+                MessageBox.Show(tmp.Text, tmp.Name);
+            }
+            catch(System.InvalidCastException err)
+            {
+                MessageBox.Show(err.Source);
+                MessageBox.Show(err.Message);
+            }
         }
 
         private Button dynamicBtn;
