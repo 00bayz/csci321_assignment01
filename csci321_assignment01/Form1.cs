@@ -82,6 +82,11 @@ namespace csci321_assignment01
             }
         }
 
+        private void staticTxtBox_TxtChange(object sender, EventArgs e)
+        {
+            MessageBox.Show(staticTxtBox.Text, "Text Changed");
+        }
+
         private Button dynamicBtn;
     }
 }
