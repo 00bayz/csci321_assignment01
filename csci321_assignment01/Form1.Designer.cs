@@ -32,6 +32,7 @@ namespace csci321_assignment01
             this.DynamicBox = new System.Windows.Forms.GroupBox();
             this.staticBtn1 = new System.Windows.Forms.Button();
             this.StaticBox = new System.Windows.Forms.GroupBox();
+            this.staticTxtBox = new System.Windows.Forms.TextBox();
             this.StaticBox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,6 +64,7 @@ namespace csci321_assignment01
             // 
             // StaticBox
             // 
+            this.StaticBox.Controls.Add(this.staticTxtBox);
             this.StaticBox.Controls.Add(this.staticBtn1);
             this.StaticBox.Font = new System.Drawing.Font("Liberation Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StaticBox.ForeColor = System.Drawing.Color.Cyan;
@@ -72,6 +74,14 @@ namespace csci321_assignment01
             this.StaticBox.TabIndex = 0;
             this.StaticBox.TabStop = false;
             this.StaticBox.Text = "Static Elements";
+            // 
+            // staticTxtBox
+            // 
+            this.staticTxtBox.Location = new System.Drawing.Point(6, 210);
+            this.staticTxtBox.Name = "staticTxtBox";
+            this.staticTxtBox.Size = new System.Drawing.Size(288, 26);
+            this.staticTxtBox.TabIndex = 1;
+            this.staticTxtBox.TextChanged += new System.EventHandler(this.staticTxtBox_TxtChange);
             // 
             // Form1
             // 
@@ -86,6 +96,7 @@ namespace csci321_assignment01
             this.Text = "CSCI321 Assignment 1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.StaticBox.ResumeLayout(false);
+            this.StaticBox.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -94,6 +105,7 @@ namespace csci321_assignment01
         private System.Windows.Forms.GroupBox DynamicBox;
         private System.Windows.Forms.Button staticBtn1;
         private System.Windows.Forms.GroupBox StaticBox;
+        private System.Windows.Forms.TextBox staticTxtBox;
     }
 }
 

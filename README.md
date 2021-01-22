@@ -10,8 +10,8 @@ CSCS321 (Windows Programming) - Assignment 01
 - [x] Task 2: Dynamic Button (created by Static Button 1)
     - [x] On Mouse Hover => Text Change
     
-- [ ] Task 3: Static Textbox
-    - [ ] On Text Change => Send text to a Message Box
+- [x] Task 3: Static Textbox
+    - [x] On Text Change => Send text to a Message Box
     
 - [ ] Task 4: Static Button 2
     - [ ] On Button Push => Create 2 dynamic textboxes (See task 5)
