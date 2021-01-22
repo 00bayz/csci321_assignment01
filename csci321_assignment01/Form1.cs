@@ -89,22 +89,20 @@ namespace csci321_assignment01
             {
                 dynamicTxtBox1 = new TextBox();
                 dynamicTxtBox1.Font = new System.Drawing.Font("Liberation Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-                dynamicTxtBox1.Location = new System.Drawing.Point(324, 300);
+                dynamicTxtBox1.Location = new System.Drawing.Point(6, 200);
                 dynamicTxtBox1.Name = "Dynamic Text Box 1";
                 dynamicTxtBox1.Size = new System.Drawing.Size(288, 26);
                 dynamicTxtBox1.TabIndex = 1;
                 dynamicTxtBox1.TextChanged += new System.EventHandler(this.dynamicTxtBox_TxtChange);
-                Controls.Add(dynamicTxtBox1);
-                Controls.SetChildIndex(dynamicTxtBox1, 0);
+                DynamicBox.Controls.Add(dynamicTxtBox1);
                 dynamicTxtBox2 = new TextBox();
                 dynamicTxtBox2.Font = new System.Drawing.Font("Liberation Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-                dynamicTxtBox2.Location = new System.Drawing.Point(324, 340);
+                dynamicTxtBox2.Location = new System.Drawing.Point(6, 250);
                 dynamicTxtBox2.Name = "Dynamic Text Box 2";
                 dynamicTxtBox2.Size = new System.Drawing.Size(288, 26);
                 dynamicTxtBox2.TabIndex = 1;
                 dynamicTxtBox2.TextChanged += new System.EventHandler(this.dynamicTxtBox_TxtChange);
-                Controls.Add(dynamicTxtBox2);
-                Controls.SetChildIndex(dynamicTxtBox2, 0);
+                DynamicBox.Controls.Add(dynamicTxtBox2);
             }
         }
 
