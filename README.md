@@ -16,7 +16,7 @@ CSCS321 (Windows Programming) - Assignment 01
 - [x] Task 4: Static Button 2
     - [x] On Button Push => Create 2 dynamic textboxes (See task 5)
     
-- [ ] Task 5: Dynamic textbox * 2 (created by Static Button 2)
-    - [ ] On Text Change => Send text & textbox identifier to a Message Box (report which textbox changed and the text)
+- [x] Task 5: Dynamic textbox * 2 (created by Static Button 2)
+    - [x] On Text Change => Send text & textbox identifier to a Message Box (report which textbox changed and the text)
     
 _Note: Prevent additional form alements from being created once the initial dynamic form elements have been added._
