@@ -19,10 +19,7 @@ namespace csci321_assignment01
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Console.WriteLine(StaticBox.Location.X);
-            Console.WriteLine(StaticBox.Location.Y);
-            Console.WriteLine(DynamicBox.Location.X);
-            Console.WriteLine(DynamicBox.Location.Y);
+            
         }
 
         private void staticBtn1_Hover(object sender, EventArgs e)
