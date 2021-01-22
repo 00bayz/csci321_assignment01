@@ -44,7 +44,7 @@ namespace csci321_assignment01
                 dynamicBtn = new Button();
                 dynamicBtn.Font = new System.Drawing.Font("Liberation Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                 dynamicBtn.BackColor = System.Drawing.SystemColors.ControlDark;
-                dynamicBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+                dynamicBtn.Cursor = System.Windows.Forms.Cursors.No;
                 dynamicBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
                 dynamicBtn.FlatAppearance.BorderSize = 1;
                 dynamicBtn.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -72,7 +72,14 @@ namespace csci321_assignment01
 
         private void dynamicBtn_Hover(object sender, EventArgs e)
         {
-            
+            if (dynamicBtn.Text == "Dynamic Button")
+            {
+                dynamicBtn.Text = "ANOTHER TEXT CHANGED";
+            }
+            else
+            {
+                dynamicBtn.Text = "Dynamic Button";
+            }
         }
 
         private Button dynamicBtn;
