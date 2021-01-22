@@ -29,20 +29,11 @@ namespace csci321_assignment01
         /// </summary>
         private void InitializeComponent()
         {
-            this.StaticBox = new System.Windows.Forms.GroupBox();
             this.DynamicBox = new System.Windows.Forms.GroupBox();
+            this.staticBtn1 = new System.Windows.Forms.Button();
+            this.StaticBox = new System.Windows.Forms.GroupBox();
+            this.StaticBox.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // StaticBox
-            // 
-            this.StaticBox.Font = new System.Drawing.Font("Liberation Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StaticBox.ForeColor = System.Drawing.Color.Cyan;
-            this.StaticBox.Location = new System.Drawing.Point(12, 12);
-            this.StaticBox.Name = "StaticBox";
-            this.StaticBox.Size = new System.Drawing.Size(300, 391);
-            this.StaticBox.TabIndex = 0;
-            this.StaticBox.TabStop = false;
-            this.StaticBox.Text = "Static Elements";
             // 
             // DynamicBox
             // 
@@ -54,6 +45,33 @@ namespace csci321_assignment01
             this.DynamicBox.TabIndex = 1;
             this.DynamicBox.TabStop = false;
             this.DynamicBox.Text = "Dynamic Elements";
+            // 
+            // staticBtn1
+            // 
+            this.staticBtn1.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.staticBtn1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.staticBtn1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.staticBtn1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.staticBtn1.Location = new System.Drawing.Point(6, 25);
+            this.staticBtn1.Name = "staticBtn1";
+            this.staticBtn1.Size = new System.Drawing.Size(288, 77);
+            this.staticBtn1.TabIndex = 0;
+            this.staticBtn1.Text = "Static Button 1";
+            this.staticBtn1.UseVisualStyleBackColor = false;
+            this.staticBtn1.Click += new System.EventHandler(this.staticBtn1_Click);
+            this.staticBtn1.MouseHover += new System.EventHandler(this.staticBtn1_Hover);
+            // 
+            // StaticBox
+            // 
+            this.StaticBox.Controls.Add(this.staticBtn1);
+            this.StaticBox.Font = new System.Drawing.Font("Liberation Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StaticBox.ForeColor = System.Drawing.Color.Cyan;
+            this.StaticBox.Location = new System.Drawing.Point(12, 12);
+            this.StaticBox.Name = "StaticBox";
+            this.StaticBox.Size = new System.Drawing.Size(300, 391);
+            this.StaticBox.TabIndex = 0;
+            this.StaticBox.TabStop = false;
+            this.StaticBox.Text = "Static Elements";
             // 
             // Form1
             // 
@@ -67,14 +85,15 @@ namespace csci321_assignment01
             this.Name = "Form1";
             this.Text = "CSCI321 Assignment 1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.StaticBox.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.GroupBox StaticBox;
         private System.Windows.Forms.GroupBox DynamicBox;
+        private System.Windows.Forms.Button staticBtn1;
+        private System.Windows.Forms.GroupBox StaticBox;
     }
 }
 
