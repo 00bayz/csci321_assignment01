@@ -48,7 +48,7 @@ namespace csci321_assignment01
                 dynamicBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
                 dynamicBtn.FlatAppearance.BorderSize = 1;
                 dynamicBtn.ForeColor = System.Drawing.SystemColors.ControlText;
-                dynamicBtn.Location = new System.Drawing.Point(324, 37);
+                dynamicBtn.Location = new System.Drawing.Point(6, 25);
                 dynamicBtn.Name = "dynamicBtn";
                 dynamicBtn.Size = new System.Drawing.Size(288, 77);
                 dynamicBtn.TabIndex = 0;
@@ -56,8 +56,7 @@ namespace csci321_assignment01
                 dynamicBtn.UseVisualStyleBackColor = false;
                 dynamicBtn.Click += new System.EventHandler(this.dynamicBtn_Click);
                 dynamicBtn.MouseHover += new System.EventHandler(this.dynamicBtn_Hover);
-                Controls.Add(dynamicBtn);
-                Controls.SetChildIndex(dynamicBtn, 0);
+                DynamicBox.Controls.Add(dynamicBtn);
             }
             else
             {
