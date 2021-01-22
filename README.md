@@ -3,9 +3,9 @@ CSCS321 (Windows Programming) - Assignment 01
 
 [ Requirements ]
 
-- [ ] Task 1: Static Button 1
-    - [ ] On Mouse Hover => Text Change
-    - [ ] On Button Push => Create dynamic button (See task 2) on the form
+- [x] Task 1: Static Button 1
+    - [x] On Mouse Hover => Text Change
+    - [x] On Button Push => Create dynamic button (See task 2) on the form
 
 - [ ] Task 2: Dynamic Button (created by Static Button 1)
     - [ ] On Mouse Hover => Text Change
